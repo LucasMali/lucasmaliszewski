@@ -1,0 +1,80 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+html, body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background-color: $bg;
+    color: $font;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    font-size: 1em;
+
+    @media screen and (min-width: $xl) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (min-width: $xxl) {
+        font-size: 1.4rem;
+    }
+
+
+    a{
+        color: $accent;
+        
+        :hover{
+            color: $accent-dark;
+        }
+
+    }
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $font;
+  }
+
+#footer{
+    margin: 50px;
+    min-height:20px;
+}
+
+.jumbotron{
+    background: linear-gradient(180deg,  $jumbo-first, $jumbo-second) !important;
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+    height:100%;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h3{
+    color: white;
+    text-shadow: grey 0px 3px 2px;
+    font-size: 3rem;
+}
+
+
+#hello {
+    p {
+        font-size: larger;
+    }
+}
+

@@ -1,4 +1,4 @@
-# vue_lucasmaliszewski
+# lucasmaliszewski
 
 ## Project setup
 ```
